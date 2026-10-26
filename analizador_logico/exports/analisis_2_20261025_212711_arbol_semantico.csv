@@ -1,0 +1,53 @@
+﻿Nodo,Padre,Rama,Fórmula / nodo,Regla aplicada,Estado
+1,—,1,T (((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])),Descomposición de T (((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])),Expandida
+2,1,1,T ((x[1] ∧ x[2]) → x[3]),Descomposición de T ((x[1] ∧ x[2]) → x[3]),Expandida
+3,2,1,T ((x[2] ∧ x[17]) → x[18]),Descomposición de T ((x[2] ∧ x[17]) → x[18]),Expandida
+4,3,1,Bifurcación de T ((x[1] ∧ x[2]) → x[3]),Regla β: apertura de ramas,Bifurcación
+5,4,1.a,Rama 1.a,Alternativa de la regla β,Bifurcación
+6,5,1.a,F (x[1] ∧ x[2]),Descomposición de F (x[1] ∧ x[2]),Expandida
+7,6,1.a,Bifurcación de T ((x[2] ∧ x[17]) → x[18]),Regla β: apertura de ramas,Bifurcación
+8,7,1.a.a,Rama 1.a.a,Alternativa de la regla β,Bifurcación
+9,8,1.a.a,F (x[2] ∧ x[17]),Descomposición de F (x[2] ∧ x[17]),Expandida
+10,9,1.a.a,Bifurcación de F (x[1] ∧ x[2]),Regla β: apertura de ramas,Bifurcación
+11,10,1.a.a.a,Rama 1.a.a.a,Alternativa de la regla β,Bifurcación
+12,11,1.a.a.a,F x[1],Regla β: alternativa,En desarrollo
+13,12,1.a.a.a,Bifurcación de F (x[2] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+14,13,1.a.a.a.a,Rama 1.a.a.a.a,Alternativa de la regla β,Bifurcación
+15,14,1.a.a.a.a,F x[2],Regla β: alternativa,En desarrollo
+16,15,1.a.a.a.a,"Rama abierta: {x[1]=F, x[2]=F, x[3]=V, x[17]=V, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+17,13,1.a.a.a.b,Rama 1.a.a.a.b,Alternativa de la regla β,Bifurcación
+18,17,1.a.a.a.b,F x[17],Regla β: alternativa,En desarrollo
+19,18,1.a.a.a.b,"Rama abierta: {x[1]=F, x[2]=V, x[3]=V, x[17]=F, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+20,10,1.a.a.b,Rama 1.a.a.b,Alternativa de la regla β,Bifurcación
+21,20,1.a.a.b,F x[2],Regla β: alternativa,En desarrollo
+22,21,1.a.a.b,Bifurcación de F (x[2] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+23,22,1.a.a.b.a,Rama 1.a.a.b.a,Alternativa de la regla β,Bifurcación
+24,23,1.a.a.b.a,F x[2],Regla β: alternativa,En desarrollo
+25,24,1.a.a.b.a,"Rama abierta: {x[1]=V, x[2]=F, x[3]=V, x[17]=V, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+26,22,1.a.a.b.b,Rama 1.a.a.b.b,Alternativa de la regla β,Bifurcación
+27,26,1.a.a.b.b,F x[17],Regla β: alternativa,En desarrollo
+28,27,1.a.a.b.b,"Rama abierta: {x[1]=V, x[2]=F, x[3]=V, x[17]=F, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+29,7,1.a.b,Rama 1.a.b,Alternativa de la regla β,Bifurcación
+30,29,1.a.b,T x[18],Regla β: alternativa,En desarrollo
+31,30,1.a.b,Bifurcación de F (x[1] ∧ x[2]),Regla β: apertura de ramas,Bifurcación
+32,31,1.a.b.a,Rama 1.a.b.a,Alternativa de la regla β,Bifurcación
+33,32,1.a.b.a,F x[1],Regla β: alternativa,En desarrollo
+34,33,1.a.b.a,"Rama abierta: {x[1]=F, x[2]=V, x[3]=V, x[17]=V, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+35,31,1.a.b.b,Rama 1.a.b.b,Alternativa de la regla β,Bifurcación
+36,35,1.a.b.b,F x[2],Regla β: alternativa,En desarrollo
+37,36,1.a.b.b,"Rama abierta: {x[1]=V, x[2]=F, x[3]=V, x[17]=V, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+38,4,1.b,Rama 1.b,Alternativa de la regla β,Bifurcación
+39,38,1.b,T x[3],Regla β: alternativa,En desarrollo
+40,39,1.b,Bifurcación de T ((x[2] ∧ x[17]) → x[18]),Regla β: apertura de ramas,Bifurcación
+41,40,1.b.a,Rama 1.b.a,Alternativa de la regla β,Bifurcación
+42,41,1.b.a,F (x[2] ∧ x[17]),Descomposición de F (x[2] ∧ x[17]),Expandida
+43,42,1.b.a,Bifurcación de F (x[2] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+44,43,1.b.a.a,Rama 1.b.a.a,Alternativa de la regla β,Bifurcación
+45,44,1.b.a.a,F x[2],Regla β: alternativa,En desarrollo
+46,45,1.b.a.a,"Rama abierta: {x[1]=V, x[2]=F, x[3]=V, x[17]=V, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+47,43,1.b.a.b,Rama 1.b.a.b,Alternativa de la regla β,Bifurcación
+48,47,1.b.a.b,F x[17],Regla β: alternativa,En desarrollo
+49,48,1.b.a.b,"Rama abierta: {x[1]=V, x[2]=V, x[3]=V, x[17]=F, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+50,40,1.b.b,Rama 1.b.b,Alternativa de la regla β,Bifurcación
+51,50,1.b.b,T x[18],Regla β: alternativa,En desarrollo
+52,51,1.b.b,"Rama abierta: {x[1]=V, x[2]=V, x[3]=V, x[17]=V, x[18]=V}",Sin fórmulas por expandir,Rama abierta

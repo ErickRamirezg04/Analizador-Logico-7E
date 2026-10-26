@@ -1,0 +1,102 @@
+﻿Nodo,Padre,Rama,Fórmula / nodo,Regla aplicada,Estado
+1,—,1,T ((((((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])) ∧ ((x[1] ∧ x[17]) → ¬x[3])) ∧ x[1]) ∧ x[2]),Descomposición de T ((((((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])) ∧ ((x[1] ∧ x[17]) → ¬x[3])) ∧ x[1]) ∧ x[2]),Expandida
+2,1,1,T (((((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])) ∧ ((x[1] ∧ x[17]) → ¬x[3])) ∧ x[1]),Descomposición de T (((((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])) ∧ ((x[1] ∧ x[17]) → ¬x[3])) ∧ x[1]),Expandida
+3,2,1,T x[2],Regla α: misma rama,En desarrollo
+4,3,1,T ((((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])) ∧ ((x[1] ∧ x[17]) → ¬x[3])),Descomposición de T ((((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])) ∧ ((x[1] ∧ x[17]) → ¬x[3])),Expandida
+5,4,1,T x[1],Regla α: misma rama,En desarrollo
+6,5,1,T (((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])),Descomposición de T (((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18])),Expandida
+7,6,1,T ((x[1] ∧ x[17]) → ¬x[3]),Descomposición de T ((x[1] ∧ x[17]) → ¬x[3]),Expandida
+8,7,1,T ((x[1] ∧ x[2]) → x[3]),Descomposición de T ((x[1] ∧ x[2]) → x[3]),Expandida
+9,8,1,T ((x[2] ∧ x[17]) → x[18]),Descomposición de T ((x[2] ∧ x[17]) → x[18]),Expandida
+10,9,1,Bifurcación de T ((x[1] ∧ x[17]) → ¬x[3]),Regla β: apertura de ramas,Bifurcación
+11,10,1.a,Rama 1.a,Alternativa de la regla β,Bifurcación
+12,11,1.a,F (x[1] ∧ x[17]),Descomposición de F (x[1] ∧ x[17]),Expandida
+13,12,1.a,Bifurcación de T ((x[1] ∧ x[2]) → x[3]),Regla β: apertura de ramas,Bifurcación
+14,13,1.a.a,Rama 1.a.a,Alternativa de la regla β,Bifurcación
+15,14,1.a.a,F (x[1] ∧ x[2]),Descomposición de F (x[1] ∧ x[2]),Expandida
+16,15,1.a.a,Bifurcación de T ((x[2] ∧ x[17]) → x[18]),Regla β: apertura de ramas,Bifurcación
+17,16,1.a.a.a,Rama 1.a.a.a,Alternativa de la regla β,Bifurcación
+18,17,1.a.a.a,F (x[2] ∧ x[17]),Regla β: alternativa,En desarrollo
+19,18,1.a.a.a,Bifurcación de F (x[1] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+20,19,1.a.a.a.a,Rama 1.a.a.a.a,Alternativa de la regla β,Bifurcación
+21,20,1.a.a.a.a,F x[1],Regla β: alternativa,En desarrollo
+22,21,1.a.a.a.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+23,19,1.a.a.a.b,Rama 1.a.a.a.b,Alternativa de la regla β,Bifurcación
+24,23,1.a.a.a.b,F x[17],Regla β: alternativa,En desarrollo
+25,24,1.a.a.a.b,Bifurcación de F (x[1] ∧ x[2]),Regla β: apertura de ramas,Bifurcación
+26,25,1.a.a.a.b.a,Rama 1.a.a.a.b.a,Alternativa de la regla β,Bifurcación
+27,26,1.a.a.a.b.a,F x[1],Regla β: alternativa,En desarrollo
+28,27,1.a.a.a.b.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+29,25,1.a.a.a.b.b,Rama 1.a.a.a.b.b,Alternativa de la regla β,Bifurcación
+30,29,1.a.a.a.b.b,F x[2],Regla β: alternativa,En desarrollo
+31,30,1.a.a.a.b.b,* Cierre: x[2] y ¬x[2],Literal complementario,Rama cerrada
+32,16,1.a.a.b,Rama 1.a.a.b,Alternativa de la regla β,Bifurcación
+33,32,1.a.a.b,T x[18],Regla β: alternativa,En desarrollo
+34,33,1.a.a.b,Bifurcación de F (x[1] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+35,34,1.a.a.b.a,Rama 1.a.a.b.a,Alternativa de la regla β,Bifurcación
+36,35,1.a.a.b.a,F x[1],Regla β: alternativa,En desarrollo
+37,36,1.a.a.b.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+38,34,1.a.a.b.b,Rama 1.a.a.b.b,Alternativa de la regla β,Bifurcación
+39,38,1.a.a.b.b,F x[17],Regla β: alternativa,En desarrollo
+40,39,1.a.a.b.b,Bifurcación de F (x[1] ∧ x[2]),Regla β: apertura de ramas,Bifurcación
+41,40,1.a.a.b.b.a,Rama 1.a.a.b.b.a,Alternativa de la regla β,Bifurcación
+42,41,1.a.a.b.b.a,F x[1],Regla β: alternativa,En desarrollo
+43,42,1.a.a.b.b.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+44,40,1.a.a.b.b.b,Rama 1.a.a.b.b.b,Alternativa de la regla β,Bifurcación
+45,44,1.a.a.b.b.b,F x[2],Regla β: alternativa,En desarrollo
+46,45,1.a.a.b.b.b,* Cierre: x[2] y ¬x[2],Literal complementario,Rama cerrada
+47,13,1.a.b,Rama 1.a.b,Alternativa de la regla β,Bifurcación
+48,47,1.a.b,T x[3],Regla β: alternativa,En desarrollo
+49,48,1.a.b,Bifurcación de T ((x[2] ∧ x[17]) → x[18]),Regla β: apertura de ramas,Bifurcación
+50,49,1.a.b.a,Rama 1.a.b.a,Alternativa de la regla β,Bifurcación
+51,50,1.a.b.a,F (x[2] ∧ x[17]),Descomposición de F (x[2] ∧ x[17]),Expandida
+52,51,1.a.b.a,Bifurcación de F (x[1] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+53,52,1.a.b.a.a,Rama 1.a.b.a.a,Alternativa de la regla β,Bifurcación
+54,53,1.a.b.a.a,F x[1],Regla β: alternativa,En desarrollo
+55,54,1.a.b.a.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+56,52,1.a.b.a.b,Rama 1.a.b.a.b,Alternativa de la regla β,Bifurcación
+57,56,1.a.b.a.b,F x[17],Regla β: alternativa,En desarrollo
+58,57,1.a.b.a.b,Bifurcación de F (x[2] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+59,58,1.a.b.a.b.a,Rama 1.a.b.a.b.a,Alternativa de la regla β,Bifurcación
+60,59,1.a.b.a.b.a,F x[2],Regla β: alternativa,En desarrollo
+61,60,1.a.b.a.b.a,* Cierre: x[2] y ¬x[2],Literal complementario,Rama cerrada
+62,58,1.a.b.a.b.b,Rama 1.a.b.a.b.b,Alternativa de la regla β,Bifurcación
+63,62,1.a.b.a.b.b,F x[17],Regla β: alternativa,En desarrollo
+64,63,1.a.b.a.b.b,"Rama abierta: {x[1]=V, x[2]=V, x[3]=V, x[17]=F, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+65,49,1.a.b.b,Rama 1.a.b.b,Alternativa de la regla β,Bifurcación
+66,65,1.a.b.b,T x[18],Regla β: alternativa,En desarrollo
+67,66,1.a.b.b,Bifurcación de F (x[1] ∧ x[17]),Regla β: apertura de ramas,Bifurcación
+68,67,1.a.b.b.a,Rama 1.a.b.b.a,Alternativa de la regla β,Bifurcación
+69,68,1.a.b.b.a,F x[1],Regla β: alternativa,En desarrollo
+70,69,1.a.b.b.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+71,67,1.a.b.b.b,Rama 1.a.b.b.b,Alternativa de la regla β,Bifurcación
+72,71,1.a.b.b.b,F x[17],Regla β: alternativa,En desarrollo
+73,72,1.a.b.b.b,"Rama abierta: {x[1]=V, x[2]=V, x[3]=V, x[17]=F, x[18]=V}",Sin fórmulas por expandir,Rama abierta
+74,10,1.b,Rama 1.b,Alternativa de la regla β,Bifurcación
+75,74,1.b,T ¬x[3],Descomposición de T ¬x[3],Expandida
+76,75,1.b,F x[3],Regla α: misma rama,En desarrollo
+77,76,1.b,Bifurcación de T ((x[1] ∧ x[2]) → x[3]),Regla β: apertura de ramas,Bifurcación
+78,77,1.b.a,Rama 1.b.a,Alternativa de la regla β,Bifurcación
+79,78,1.b.a,F (x[1] ∧ x[2]),Descomposición de F (x[1] ∧ x[2]),Expandida
+80,79,1.b.a,Bifurcación de T ((x[2] ∧ x[17]) → x[18]),Regla β: apertura de ramas,Bifurcación
+81,80,1.b.a.a,Rama 1.b.a.a,Alternativa de la regla β,Bifurcación
+82,81,1.b.a.a,F (x[2] ∧ x[17]),Regla β: alternativa,En desarrollo
+83,82,1.b.a.a,Bifurcación de F (x[1] ∧ x[2]),Regla β: apertura de ramas,Bifurcación
+84,83,1.b.a.a.a,Rama 1.b.a.a.a,Alternativa de la regla β,Bifurcación
+85,84,1.b.a.a.a,F x[1],Regla β: alternativa,En desarrollo
+86,85,1.b.a.a.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+87,83,1.b.a.a.b,Rama 1.b.a.a.b,Alternativa de la regla β,Bifurcación
+88,87,1.b.a.a.b,F x[2],Regla β: alternativa,En desarrollo
+89,88,1.b.a.a.b,* Cierre: x[2] y ¬x[2],Literal complementario,Rama cerrada
+90,80,1.b.a.b,Rama 1.b.a.b,Alternativa de la regla β,Bifurcación
+91,90,1.b.a.b,T x[18],Regla β: alternativa,En desarrollo
+92,91,1.b.a.b,Bifurcación de F (x[1] ∧ x[2]),Regla β: apertura de ramas,Bifurcación
+93,92,1.b.a.b.a,Rama 1.b.a.b.a,Alternativa de la regla β,Bifurcación
+94,93,1.b.a.b.a,F x[1],Regla β: alternativa,En desarrollo
+95,94,1.b.a.b.a,* Cierre: x[1] y ¬x[1],Literal complementario,Rama cerrada
+96,92,1.b.a.b.b,Rama 1.b.a.b.b,Alternativa de la regla β,Bifurcación
+97,96,1.b.a.b.b,F x[2],Regla β: alternativa,En desarrollo
+98,97,1.b.a.b.b,* Cierre: x[2] y ¬x[2],Literal complementario,Rama cerrada
+99,77,1.b.b,Rama 1.b.b,Alternativa de la regla β,Bifurcación
+100,99,1.b.b,T x[3],Regla β: alternativa,En desarrollo
+101,100,1.b.b,* Cierre: x[3] y ¬x[3],Literal complementario,Rama cerrada

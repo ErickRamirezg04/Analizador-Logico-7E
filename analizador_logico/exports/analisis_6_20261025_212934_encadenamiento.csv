@@ -1,0 +1,4 @@
+﻿Paso,Regla,Regla ingresada,Antecedente demostrado,Hechos utilizados,Conclusión
+1,R1,Premisa #1: Si tengo sueño y estoy cansado entonces puedo dormir,(tengo sueño ∧ estoy cansado),"tengo sueño, estoy cansado",puedo dormir
+2,R2,Premisa #2: si estoy cansado y tomo café entonces tengo energia,(estoy cansado ∧ tomo café),"estoy cansado, tomo café",tengo energia
+3,R3,Premisa #3: si tengo sueño y tomo café entonces no puedo dormir,(tengo sueño ∧ tomo café),"tengo sueño, tomo café",¬puedo dormir

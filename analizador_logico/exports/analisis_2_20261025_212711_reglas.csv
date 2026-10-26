@@ -1,0 +1,6 @@
+﻿Regla,Operando izquierdo,Conector,Operando derecho,Tipo,Subfórmula resultante
+R1,x[1],∧,x[2],Conjunción (AND / Y),(x[1] ∧ x[2])
+R2,(x[1] ∧ x[2]),→,x[3],Condicional (SI…ENTONCES / →),((x[1] ∧ x[2]) → x[3])
+R3,x[2],∧,x[17],Conjunción (AND / Y),(x[2] ∧ x[17])
+R4,(x[2] ∧ x[17]),→,x[18],Condicional (SI…ENTONCES / →),((x[2] ∧ x[17]) → x[18])
+R5,((x[1] ∧ x[2]) → x[3]),∧,((x[2] ∧ x[17]) → x[18]),Conjunción (AND / Y),(((x[1] ∧ x[2]) → x[3]) ∧ ((x[2] ∧ x[17]) → x[18]))

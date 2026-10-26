@@ -1,0 +1,33 @@
+﻿Posición,Token,Tipo
+1,si,Palabra / posible inicio condicional
+2,tengo,Palabra de proposición
+3,sueño,Palabra de proposición
+4,y,Conector AND
+5,estoy,Palabra de proposición
+6,cansado,Palabra de proposición
+7,entonces,Conector condicional
+8,puedo,Palabra de proposición
+9,dormir,Palabra de proposición
+10,si,Palabra / posible inicio condicional
+11,estoy,Palabra de proposición
+12,cansado,Palabra de proposición
+13,y,Conector AND
+14,tomo,Palabra de proposición
+15,café,Palabra de proposición
+16,entonces,Conector condicional
+17,tengo,Palabra de proposición
+18,energia,Palabra de proposición
+19,si,Palabra / posible inicio condicional
+20,tengo,Palabra de proposición
+21,sueño,Palabra de proposición
+22,y,Conector AND
+23,tomo,Palabra de proposición
+24,café,Palabra de proposición
+25,entonces,Conector condicional
+26,no,Negación
+27,puedo,Palabra de proposición
+28,dormir,Palabra de proposición
+29,tengo,Palabra de proposición
+30,sueño,Palabra de proposición
+31,estoy,Palabra de proposición
+32,cansado,Palabra de proposición

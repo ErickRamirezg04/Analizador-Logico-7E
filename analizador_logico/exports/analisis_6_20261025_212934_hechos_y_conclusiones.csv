@@ -1,0 +1,7 @@
+﻿Proposición,Tipo,Origen,Justificación
+tengo sueño,Hecho inicial,Premisa #4: tengo sueño,Premisa proporcionada por el usuario
+estoy cansado,Hecho inicial,Premisa #5: estoy cansado,Premisa proporcionada por el usuario
+tomo café,Hecho inicial,Premisa #6: tomo café,Premisa proporcionada por el usuario
+puedo dormir,Conclusión derivada,R1,"El antecedente se satisfizo con: tengo sueño, estoy cansado"
+tengo energia,Conclusión derivada,R2,"El antecedente se satisfizo con: estoy cansado, tomo café"
+¬puedo dormir,Conclusión derivada,R3,"El antecedente se satisfizo con: tengo sueño, tomo café"

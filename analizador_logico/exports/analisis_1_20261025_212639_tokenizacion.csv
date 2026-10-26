@@ -1,0 +1,10 @@
+﻿Posición,Token,Tipo
+1,si,Palabra / posible inicio condicional
+2,tengo,Palabra de proposición
+3,sueño,Palabra de proposición
+4,y,Conector AND
+5,estoy,Palabra de proposición
+6,cansado,Palabra de proposición
+7,entonces,Conector condicional
+8,puedo,Palabra de proposición
+9,dormir,Palabra de proposición
