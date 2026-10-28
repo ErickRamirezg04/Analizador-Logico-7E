@@ -1,0 +1,7 @@
+﻿Regla,Operando izquierdo,Conector,Operando derecho,Tipo,Subfórmula resultante
+R1,x[2],¬,—,Negación (NOT / NO / ¬),¬x[2]
+R2,x[1],→,¬x[2],Condicional (SI…ENTONCES / →),(x[1] → ¬x[2])
+R3,x[1],→,x[12],Condicional (SI…ENTONCES / →),(x[1] → x[12])
+R4,(x[1] → ¬x[2]),∧,(x[1] → x[12]),Conjunción (AND / Y),((x[1] → ¬x[2]) ∧ (x[1] → x[12]))
+R5,x[12],∨,x[26],Disyunción (OR / O),(x[12] ∨ x[26])
+R6,((x[1] → ¬x[2]) ∧ (x[1] → x[12])),∧,(x[12] ∨ x[26]),Conjunción (AND / Y),(((x[1] → ¬x[2]) ∧ (x[1] → x[12])) ∧ (x[12] ∨ x[26]))

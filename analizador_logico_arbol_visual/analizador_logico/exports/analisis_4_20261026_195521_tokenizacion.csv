@@ -1,0 +1,30 @@
+﻿Posición,Token,Tipo
+1,si,Palabra / posible inicio condicional
+2,es,Palabra de proposición
+3,de,Palabra de proposición
+4,noche,Palabra de proposición
+5,",",Puntuación
+6,entonces,Conector condicional
+7,no,Negación
+8,es,Palabra de proposición
+9,de,Palabra de proposición
+10,dia,Palabra de proposición
+11,si,Palabra / posible inicio condicional
+12,es,Palabra de proposición
+13,de,Palabra de proposición
+14,noche,Palabra de proposición
+15,",",Puntuación
+16,entonces,Conector condicional
+17,salen,Palabra de proposición
+18,las,Palabra de proposición
+19,brujas,Palabra de proposición
+20,salen,Palabra de proposición
+21,las,Palabra de proposición
+22,brujas,Palabra de proposición
+23,o,Conector OR
+24,salen,Palabra de proposición
+25,los,Palabra de proposición
+26,duendes,Palabra de proposición
+27,salen,Palabra de proposición
+28,los,Palabra de proposición
+29,duendes,Palabra de proposición

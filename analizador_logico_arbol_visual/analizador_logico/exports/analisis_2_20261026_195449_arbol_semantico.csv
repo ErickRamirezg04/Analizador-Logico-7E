@@ -1,0 +1,24 @@
+﻿Nodo,Padre,Rama,Fórmula / nodo,Regla aplicada,Estado
+1,—,1,T ((x[1] → ¬x[2]) ∧ (x[1] → x[12])),Descomposición de T ((x[1] → ¬x[2]) ∧ (x[1] → x[12])),Expandida
+2,1,1,T (x[1] → ¬x[2]),Descomposición de T (x[1] → ¬x[2]),Expandida
+3,2,1,T (x[1] → x[12]),Descomposición de T (x[1] → x[12]),Expandida
+4,3,1,Bifurcación de T (x[1] → ¬x[2]),Regla β: apertura de ramas,Bifurcación
+5,4,1.a,Rama 1.a,Alternativa de la regla β,Bifurcación
+6,5,1.a,F x[1],Regla β: alternativa,En desarrollo
+7,6,1.a,Bifurcación de T (x[1] → x[12]),Regla β: apertura de ramas,Bifurcación
+8,7,1.a.a,Rama 1.a.a,Alternativa de la regla β,Bifurcación
+9,8,1.a.a,F x[1],Regla β: alternativa,En desarrollo
+10,9,1.a.a,"Rama abierta: {x[1]=F, x[2]=V, x[12]=V}",Sin fórmulas por expandir,Rama abierta
+11,7,1.a.b,Rama 1.a.b,Alternativa de la regla β,Bifurcación
+12,11,1.a.b,T x[12],Regla β: alternativa,En desarrollo
+13,12,1.a.b,"Rama abierta: {x[1]=F, x[2]=V, x[12]=V}",Sin fórmulas por expandir,Rama abierta
+14,4,1.b,Rama 1.b,Alternativa de la regla β,Bifurcación
+15,14,1.b,T ¬x[2],Descomposición de T ¬x[2],Expandida
+16,15,1.b,F x[2],Regla α: misma rama,En desarrollo
+17,16,1.b,Bifurcación de T (x[1] → x[12]),Regla β: apertura de ramas,Bifurcación
+18,17,1.b.a,Rama 1.b.a,Alternativa de la regla β,Bifurcación
+19,18,1.b.a,F x[1],Regla β: alternativa,En desarrollo
+20,19,1.b.a,"Rama abierta: {x[1]=F, x[2]=F, x[12]=V}",Sin fórmulas por expandir,Rama abierta
+21,17,1.b.b,Rama 1.b.b,Alternativa de la regla β,Bifurcación
+22,21,1.b.b,T x[12],Regla β: alternativa,En desarrollo
+23,22,1.b.b,"Rama abierta: {x[1]=V, x[2]=F, x[12]=V}",Sin fórmulas por expandir,Rama abierta

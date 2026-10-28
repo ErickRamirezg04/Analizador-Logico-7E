@@ -1,0 +1,11 @@
+﻿Posición,Token,Tipo
+1,si,Palabra / posible inicio condicional
+2,es,Palabra de proposición
+3,de,Palabra de proposición
+4,noche,Palabra de proposición
+5,",",Puntuación
+6,entonces,Conector condicional
+7,no,Negación
+8,es,Palabra de proposición
+9,de,Palabra de proposición
+10,dia,Palabra de proposición
